@@ -53,25 +53,29 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid aquamarine; */
+  outline: 2px solid aquamarine;
 }
 
 /* main page */
 /* header */
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   display: flex;
   align-items: center;
-
-  border-bottom: 1px solid #e7e9fc;
-
-  padding-top: 25.5px;
-  padding-bottom: 25.5px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .main-logo {
@@ -174,6 +178,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   font-family: inherit;
+  border: none;
 
   letter-spacing: 0.04em;
   color: var(--main-wtite-color);
@@ -194,14 +199,14 @@ img {
 
 /* advantages */
 
+.advantages-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .advantages-list {
   display: flex;
   gap: 24px;
-}
-
-.advantages-section {
-  padding-top: 120px;
-  margin-bottom: 120px;
 }
 
 .advantages-title {
@@ -275,8 +280,17 @@ img {
   text-align: center;
 }
 
+.team-item {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-img {
   margin-bottom: 32px;
+}
+
+.employee-position {
+  padding: 32px 16px;
 }
 
 .team-employee {
@@ -287,6 +301,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 
+  text-align: center;
   margin-bottom: 8px;
 }
 
@@ -294,20 +309,20 @@ img {
   font-size: 16px;
   line-height: 1.5;
 
-  padding-bottom: 32px;
+  text-align: center;
 }
 /* footer */
 
 .main-footer {
   background-color: var(--title-text-color);
 
-  padding-top: 101.5px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .footer-logo {
   display: inline-block;
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
 }
 .footer-logo {
   font-family: Raleway, sans-serif;
@@ -348,6 +363,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-bottom: 72px;
 }
 
 .portfolio-button {
@@ -355,7 +371,6 @@ img {
   border-radius: 4px;
   padding: 12px 24px;
   align-items: center;
-  margin-bottom: 72px;
 }
 
 .portfolio-button {
@@ -373,6 +388,7 @@ img {
 .portfolio-button:focus {
   color: var(--main-wtite-color);
   background-color: var(--button-accent-color);
+  border: 1px solid transparent;
 }
 
 .portfolio-products {
@@ -395,7 +411,6 @@ img {
   color: var(--title-text-color);
 
   margin-top: 32px;
-  /* padding-right: 172px; */
   margin-bottom: 8px;
   padding-left: 16px;
 }
