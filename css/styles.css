@@ -57,6 +57,19 @@ img {
   /* outline: 2px solid aquamarine; */
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* main page */
 /* header */
 
@@ -154,11 +167,6 @@ img {
   padding-bottom: 188px;
 }
 
-.hero-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .hero-text {
   font-weight: 700;
   font-size: 56px;
@@ -176,7 +184,7 @@ img {
 }
 
 .hero-button {
-  display: inline-block;
+  display: block;
 
   font-weight: 500;
   font-size: 16px;
@@ -287,10 +295,6 @@ img {
 .team-item {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-img {
-  margin-bottom: 32px;
 }
 
 .employee-position {
